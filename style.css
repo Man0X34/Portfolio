@@ -1,0 +1,175 @@
+/* Fonts */
+
+/* CSS */
+
+body {
+    background-color: #F7FFDD;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #DBA159;
+    padding: 20px;
+    margin: 0px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    font-family: "Overpass Mono", monospace;
+}
+
+.custom-anchor {
+    padding: 10px;
+    text-decoration: none;
+    color: #F7FFDD;
+    font-size: 30px;
+    font-family: "Overpass Mono", monospace;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-anchor:hover {
+    color: #DBA159;
+    transition: ease-in-out 0.2s;
+
+}
+
+.custom-anchor::before {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F7FFDD;
+    transform: scaleX(0) skewX(-20deg);
+    transform-origin: left;
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+}
+
+.custom-anchor:hover::before {
+    transform: scaleX(1) skewX(-20deg);
+}
+
+.custom-title {
+    padding: 10px;
+    margin: 30px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #DBA159;
+    font-size: 30px;
+    font-family: "Overpass Mono", monospace;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-title:hover {
+    color: #F7FFDD;
+    transition: ease-in-out 0.2s;
+
+}
+
+.custom-title::before {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DBA159;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+}
+
+.custom-title:hover::before {
+    transform: scaleX(1);
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    background-color: #DBA159;
+    padding: 20px;
+    margin: 0 70px 70px 70px;
+    margin-top: 10;
+    border-radius: 30px;
+}
+
+.language-image {
+    width: 130px;
+}
+
+.box-list {
+    display: flex;
+    direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.box {
+    position: relative;
+    margin: 30px;
+}
+
+.frameworks {
+    display: none;
+    position: absolute;
+    left: -25px;
+    background: #F7FFDD;
+    border: 10px solid #DBA159;
+    border-radius: 15px;
+    padding: 8px 16px;
+    z-index: 10;
+}
+
+.language:hover .frameworks {
+    display: block;
+}
+
+.frameworks-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.frameworks-menu li {
+    padding: 4px 0;
+    font-family: 'Overpass Mono', monospace;
+}
+
+.frameworks-menu li img {
+    width: 130px;
+}
+
+.project-image {
+    width: 170px;
+    margin: 0px;
+}
